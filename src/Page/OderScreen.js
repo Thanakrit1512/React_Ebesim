@@ -5,7 +5,7 @@ class OderScreen extends React.Component {
   render() {
     return (
       <View>
-        <Text>OderScreen</Text>
+        <Text>Coming Soon</Text>
       </View>
     );
   }

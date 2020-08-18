@@ -31,7 +31,7 @@ import HomeScreen from './src/Page/HomeScreen';
 import OderScreen from './src/Page/OderScreen';
 import CartScreen from './src/Page/CartScreen';
 import ProfileScreen from './src/Page/ProfileScreen';
-import PaymentScreen from './src/Page/PaymentScreen';
+import ScanScreen from './src/Page/PaymentScreen';
 
 const TabNavigator = createMaterialBottomTabNavigator(
   {
@@ -60,20 +60,18 @@ const TabNavigator = createMaterialBottomTabNavigator(
         ),
         activeColor: '#ffffff',
         inactiveColor: '#a3c2fa',
-        barStyle: {backgroundColor: '#2163f6'},
       },
     },
     Payment: {
-      screen: PaymentScreen,
+      screen: ScanScreen,
       navigationOptions: {
         tabBarIcon: ({tintColor}) => (
           <View>
-            <Icon name="qrcode" size={30} color="#B3093C" />
+            <Icon name="qrcode" size={30} color="#F5B041" />
           </View>
         ),
         activeColor: '#ffffff',
         inactiveColor: '#ebaaed',
-        barStyle: {backgroundColor: '#d13560'},
       },
     },
     Favourite: {
@@ -86,7 +84,6 @@ const TabNavigator = createMaterialBottomTabNavigator(
         ),
         activeColor: '#ffffff',
         inactiveColor: '#92c5c2',
-        barStyle: {backgroundColor: '#2c6d6a'},
       },
     },
     Profile: {
@@ -99,7 +96,6 @@ const TabNavigator = createMaterialBottomTabNavigator(
         ),
         activeColor: '#ffffff',
         inactiveColor: '#ebaaed',
-        barStyle: {backgroundColor: '#d13560'},
       },
     },
   },
@@ -107,7 +103,7 @@ const TabNavigator = createMaterialBottomTabNavigator(
     initialRouteName: 'Home',
     activeColor: '#ffffff',
     inactiveColor: '#bda1f7',
-    barStyle: {backgroundColor: '#F5B041'},
+    barStyle: {backgroundColor: '#2C3E50'},
   },
 );
 

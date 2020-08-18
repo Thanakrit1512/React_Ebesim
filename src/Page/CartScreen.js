@@ -1,11 +1,12 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
+import FoodCart from "../Cart/Foodcart";
 
 class CartScreen extends React.Component {
   render() {
     return (
       <View>
-        <Text>CartScreen</Text>
+        <FoodCart></FoodCart>
       </View>
     );
   }
